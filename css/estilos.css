@@ -3,6 +3,11 @@
 
 *{
     box-sizing:border-box;
+    
+}
+
+body{
+    background: #1B1E1E;
 }
 
 img{
@@ -62,7 +67,7 @@ h1,h2,h3,h4,h5,h6{
 .nav{
     position: absolute;
     top: 0px;
-    right: -100%;
+    left: -100%;
     width: 100%;
     transition: all 0.3s;
     font-family: 'Rubik', sans-serif;
@@ -90,7 +95,7 @@ h1,h2,h3,h4,h5,h6{
 
 
 .mostrar{
-   right: 0;
+   left: 0;
 }
 
 #btn-ocultar{
@@ -101,12 +106,12 @@ h1,h2,h3,h4,h5,h6{
     border-bottom: 2px solid  #1B1E1E;
 }
 
-
 /*------------------------Estilos del banner------------------------*/
 .banner{
     margin-top: 0px;
     position: relative;
     z-index: -1000;
+    margin-bottom: 20px;
 }
 
 .banner__img{
@@ -140,6 +145,20 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 0;
     font-size: 15px;
 }
+
+/*------------------------Estilos sobre mi------------------------*/
+.info__titulo{
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+}
+
+.info__txt{
+    font-size: 15px;
+}
+
+
+
 
 
 /*Pc escritorio*/
