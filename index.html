@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joel Cabana | Portafolio</title>
     <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://file.myfontastic.com/M3RQsCEAFPQhbHsGrtcGxG/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!--Header-->
@@ -16,17 +16,17 @@
             <!--Menu de navegacion-->
             <nav class="nav" id="nav">
                 <ul class="menu">
-                    <li class="menu__item "><span class="icon-times menu__link " id="btn-ocultar"></span></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Inicio</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Sobre mi</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Proyectos</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Contacto</a></li>
+                    <li class=""><span class="icon-times menu__link" id="btn-ocultar"></span></li>
+                    <li class="menu__item"><a href="#inicio" class="menu__link">Inicio</a></li>
+                    <li class="menu__item"><a hrmenu__itemef="#sobre_mi" class="menu__link">Sobre mi</a></li>
+                    <li class="menu__item"><a href="#proyectos" class="menu__link">Proyectos</a></li>
+                    <li class="menu__item"><a href="#contacto" class="menu__link">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <!--Banner-->
-    <div class="banner">
+    <div class="banner" id="inicio">
         <img src="/img/banner3.jpg" alt="" class="banner__img">
         <div class="contenedor">
             <img src="/img/usuario.jpg" class="usuario__img">
@@ -41,52 +41,62 @@
         <div class="contenedor">
             <!--Seccion sobre mi-->
             <section class="info">
-                <article class="info__columna">
-                    <h1 class="info__titulo">Sobre mi</h1>
-                    <p class="info__txt">¡Hola!, soy recién egresado de
-                        Analista Programador
-                        Universitario y estoy en busca
-                        de mi primer empleo I.T.
-                        donde pueda aportar mis
-                        conocimientos, que he
-                        adquirido durante los años
-                        académicos, crecer y adquirir
-                        experiencia laboral. También
-                        aplicar las nuevas habilidades y
-                        experiencia que vaya
-                        adquiriendo.
+                <h1 id="sobre_mi" class="info__titulo">Sobre mi</h1>
+                <article class="info info__columna">
+                    <p class="info__txt">!Hola!, soy Joel, de Argentina, 
+                         un aficionado a la programación y un amante de los creadores de proyectos de alto impacto,
+                         soy graduado de Analista Programador, orgullosamente autodidacta con el objetivo de cambiar e innovar
+                        el mundo usando la tecnología. 
                         </p>
+                    <a class="btn__descargar"href="/src/Joel Fernando Cabana.pdf">Ver / Descargar CV</a>
                 </article>
             </section>
             <!--Seccion Poyectos-->
-            <section class="info">
-                <h1 class="info__titulo">Proyectos</h1>
-                <article class="info__columna">
-                    <img src="img/card.png" alt="" class="info__img">
-                    <h4 class="info__titulo">Proyecto 1</h4>
-                    <p class="info__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos reprehenderit eligendi nulla ut optio est!</p>
+            <h1 id="proyectos" class="info__titulo">Proyectos</h1>
+            <section class="info inf__cards proyectos">
+                <article class="info__columna info__columna__card">
+                    <div class="img__box">
+                        <img src="img/proyectos/finanzapp.png" alt="" class="info__img">
+                    </div>
+                    <p class="info__txt">Controla de forma fácil todos tus ingresos y egresos
+                          .Obtene todo el historial de tus actividades y filtra por categoría y tipo de
+                          transacción.
+                    </p>
+                    <a class="btn__ver btn__descargar"href="https://finanzapp.netlify.app/" target="_blank">Ver Demo</a>
                 </article>
-                <article class="info__columna">
-                    <img src="img/card.png" alt="" class="info__img">
-                    <h4 class="info__titulo">Proyecto 2</h4>
-                    <p class="info__txt">Quia nobis tenetur, dignissimos cupiditate magni at quas reprehenderit corporis voluptatibus, delectus consequuntur temporibus nostrum.</p>
+                <article class="info__columna info__columna__card">
+                    <div class="img__box">
+                        <img src="img/proyectos/spotiapp.png" alt="" class="info__img">
+                    </div>
+                    <p class="info__txt">Busca tus artistas favoritos, visualizar sus álbumes y reproduci todas las
+                        canciones disponibles. Todo esto consumiendo la api de Spotify.
+                        </p>
+                     <a class="btn__ver btn__descargar"href="https://spotyappnew.netlify.app/" target="_blank">Ver Demo</a>
                 </article>
-                <article class="info__columna">
-                    <img src="img/card.png" alt="" class="info__img">
-                    <h4 class="info__titulo">Proyecto 3</h4>
-                    <p class="info__txt">Deleniti, sit eligendi quaerat maxime, illo obcaecati possimus earum placeat aperiam reprehenderit illum, unde deserunt.</p>
-                </article>
-            </section>
+                <article class="info__columna info__columna__card">
+                    <div class="img__box">
+                        <img src="img/proyectos/despegar.png" alt="" class="info__img">
+                    </div>
+                    <p class="info__txt">Sitio Web para promocionar tus viajes y paquetes turísticos a
+                        distintos destinos exoticos.
+                    </p>
+                    <a class="btn__ver btn__descargar"href="https://joelxcabana.github.io/LandingPage-TurismoJujuy/" target="_blank">Ver Demo</a>
+                </article> 
+            </section> 
             <section>
-                <h1 class="info__titulo">Contacto</h1>
+                <h1 id="contacto" class="info__titulo">¿Creamos algo juntos?</h1>
                 <div class="social">
-                    <a href="#" class="icon-facebook">Linkedin</a>
-                    <a href="#" class="icon-twitter">Git hub</a>
-                    <a href="#" class="icon-gplus">Correo</a>
+                    <a href="https://www.linkedin.com/in/joelxcabana/"  target="_blank" class="icon-linkedin"></a>
+                    <a href="https://github.com/joelxcabana" target="_blank" class="icon-github"></a>
+                    <a href="mailto:joelxcabana@gmail.com" class="icon-envelope"></a>
                 </div>
             </section>
         </div>
     </main>
+    <footer class="footer">
+        <p id="desarrolador" class="copy"></p>
+    </footer>
     <script src="/js/menu.js" ></script>
+    <script src="/js/footer.js" ></script>
 </body>
 </html>
